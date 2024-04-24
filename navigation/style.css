@@ -1,0 +1,94 @@
+/* Existing CSS */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(217, 217, 217);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(173, 157, 157);
+  color: white;
+  padding: 22px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.logo h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.logo h1:hover {
+  color: rgb(19, 147, 68);
+}
+.logo a {
+  text-decoration: none; /* Remove underline from anchor */
+}
+.logo li {
+  list-style: none;
+  margin-inline: 25px;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+.logo li:hover {
+  color: rgb(3, 3, 3);
+  border-bottom: 2px solid rgb(19, 147, 68);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.searchBar {
+  display: flex;
+}
+.searchBar input {
+  width: 220px;
+  padding: 6px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  margin-inline: 5px;
+  transition: all 0.3s ease;
+}
+.searchBar button {
+  width: 60px;
+  height: 32px;
+  background-color: rgb(178, 225, 61);
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.searchBar button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 830px) {
+  li {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .searchBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+}
