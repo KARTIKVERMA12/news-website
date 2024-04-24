@@ -8,23 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <div class="main-nav container flex">
-            <a href="#" onclick="reload()" class="company-logo">
-                <img src="./assets/logo.png" alt="company logo">
-            </a>
-            <div class="nav-links">
-                <ul class="flex">
-                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
-                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
-                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
-                </ul>
-            </div>
-            <div class="search-bar flex">
-                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
-                <button id="search-button" class="search-button">Search</button>
-            </div>
+<nav>
+        <div class="logo">
+            <a href="index.html"><h1>Daily News</h1></a> <!-- Added anchor tag -->
+            <li id="politics" onclick="navClick('politics')">Politics</li>
+            <li id="sports" onclick="navClick('sports')">Sports</li>
+            <li id="technology" onclick="navClick('technology')">Technology</li>
+        </div>
+        <div class="searchBar">
+            <input type="text" placeholder="Search Here.." value="" id="inputData">
+            <button id="searchBtn">Search</button>
         </div>
     </nav>
     
